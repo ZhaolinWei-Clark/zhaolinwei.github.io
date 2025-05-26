@@ -2,6 +2,11 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.4.1'
 
+group :jekyll_plugins do
+  gem 'jekyll-toc', '~> 0.16.0' # 支持 TOC 功能
+  gem 'jekyll-terser', git: 'https://github.com/RobertoJBeltran/jekyll-terser.git' # 压缩 JS
+end
+
 # Core plugins that directly affect site building
 group :jekyll_plugins do
     gem 'wdm', '>= 0.1.1' # Windows-specific dependency for file watching
